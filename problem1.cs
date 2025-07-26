@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class P1
 {
-    public static bool DuplicateNumberInArray(int[] nums)
+    public static bool DuplicateNumbersInArray(int[] nums)
     {
         HashSet<int> seen = new HashSet<int>();
         foreach (int num in nums)
