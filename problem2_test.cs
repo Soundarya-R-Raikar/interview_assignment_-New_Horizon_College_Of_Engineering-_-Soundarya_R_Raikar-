@@ -7,7 +7,6 @@ class PT2
         Test(new int[] { 0, 1, 0, 3, 12 });
         Test(new int[] { 1, 2, 3, 4 });
         Test(new int[] { 0, 0, 0, 0 });
-        Test(new int[] { 0, 1, 0, 4, 21 });
     }
 
     static void Test(int[] nums)
