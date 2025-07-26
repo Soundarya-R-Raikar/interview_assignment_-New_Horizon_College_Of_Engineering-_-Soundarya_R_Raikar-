@@ -11,9 +11,8 @@ class PT2
 
     static void Test(int[] nums)
     {
-        Console.Write("Before: [" + string.Join(", ", nums) + "] => ");
+        Console.Write("[" + string.Join(", ", nums) + "] -> ");
         Pg2.ShiftingZeroes(nums);
-        Console.WriteLine("After: [" + string.Join(", ", nums) + "]");
+        Console.WriteLine("[" + string.Join(", ", nums) + "]");
     }
 }
-
