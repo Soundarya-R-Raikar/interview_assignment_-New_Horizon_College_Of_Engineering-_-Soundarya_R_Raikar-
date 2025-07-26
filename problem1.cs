@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class P1
+public class Pg1
 {
     public static bool DuplicateNumbersInArray(int[] nums)
     {
