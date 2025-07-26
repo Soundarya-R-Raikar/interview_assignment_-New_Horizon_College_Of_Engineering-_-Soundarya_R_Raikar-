@@ -1,16 +1,14 @@
 using System;
-using System.Collections.Generic;
 
 public class Pg1
 {
     public static bool DuplicateNumbersInArray(int[] nums)
     {
-        HashSet<int> seen = new HashSet<int>();
-        foreach (int num in nums)
+        Array.Sort(nums);  
+        for (int i = 1; i < nums.Length; i++) 
         {
-            if (seen.Contains(num))
+            if (nums[i] == nums[i - 1])
                 return true;
-            seen.Add(num);
         }
         return false;
     }
