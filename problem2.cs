@@ -4,16 +4,19 @@ public class Pg2
 {
     public static void ShiftingZeroes(int[] nums)
     {
-        int index = 0;
-
+        int count = 0;  
         for (int i = 0; i < nums.Length; i++)
         {
             if (nums[i] != 0)
-                nums[index++] = nums[i];
+            {
+                if (i != count)
+                {
+                    int temp = nums[count];
+                    nums[count] = nums[i];
+                    nums[i] = temp;
+                }
+                count++;
+            }
         }
-
-        while (index < nums.Length)
-            nums[index++] = 0;
     }
 }
-
