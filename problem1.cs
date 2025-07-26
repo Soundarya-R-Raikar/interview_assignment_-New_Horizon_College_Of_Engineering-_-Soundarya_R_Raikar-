@@ -8,10 +8,10 @@ public class P1
         HashSet<int> seen = new HashSet<int>();
         foreach (int num in nums)
         {
-            if (!seen.Add(num)) 
+            if (seen.Contains(num))
                 return true;
+            seen.Add(num);
         }
         return false;
     }
 }
-
